@@ -14,6 +14,8 @@ changeNickBtn.addEventListener("click", () => {
     nameInput.value = userName;
     nameInput.classList.remove("hidden");
     displayName.classList.add("hidden");
+
+    nameInput.focus(); // <--- burada focus əlavə et ki, kursor görünsün
     changeNickBtn.innerText = "Submit";
   } else {
     // Submit
