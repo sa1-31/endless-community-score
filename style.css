@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   font-family: Inter, system-ui, sans-serif;
@@ -63,7 +64,7 @@ body {
   margin: auto;
 }
 
-/* PROFILE */
+/* PROFILE + CHECK SCORE */
 .profile-card {
   background: #111;
   border-radius: 18px;
@@ -103,6 +104,37 @@ body {
   background: #374151;
 }
 
+/* CHECK SCORE INPUT + BUTTON */
+#checkScore input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  background: #1f2933;
+  color: white;
+}
+
+#checkScore .submit-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  background: linear-gradient(135deg, #f472b6, #8b5cf6);
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+#checkScore .submit-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
 /* TASKS */
 .task-card {
   background: #111;
@@ -122,7 +154,6 @@ body {
   color: white;
 }
 
-/* SUBMIT BUTTON */
 .submit-btn {
   width: 100%;
   padding: 14px;
@@ -148,6 +179,26 @@ body {
   color: #777;
   cursor: not-allowed;
   box-shadow: none;
+}
+
+/* LEADERBOARD */
+.leaderboard-card {
+  background: #111;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.leaderboard-entry {
+  background: #1f2933;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.coming-soon {
+  filter: blur(3px);
+  color: #777;
 }
 
 /* FOOTER */
