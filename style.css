@@ -9,10 +9,33 @@ body {
   color: #e5e7eb;
 }
 
+/* BACKGROUND + BLUR */
+.background {
+  background: url('background.png') no-repeat center center/cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.overlay {
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding: 20px;
+}
+
 /* HEADER */
 .header {
   padding: 30px 20px;
   text-align: center;
+}
+
+.header-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 .header h1 {
@@ -65,17 +88,10 @@ body {
 
 /* PROFILE + CHECK SCORE */
 .profile-card {
-  background: #111;
+  background: rgba(17, 17, 17, 0.9);
   border-radius: 18px;
   padding: 20px;
   text-align: center;
-}
-
-.profile-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
 }
 
 .avatar {
@@ -103,11 +119,13 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 #displayName {
   font-size: 20px;
   font-weight: bold;
+  display: block;
 }
 
 #userNameInput {
@@ -116,21 +134,8 @@ body {
   border: none;
   background: #1f2933;
   color: white;
-  display: inline-block; /* block deyil, inline-block olsun */
-  width: 140px; /* genişlik ver */
-}
-
-.nick-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.hidden {
-  display: none;
+  display: inline-block;
+  width: 140px;
 }
 
 .nick-btn {
@@ -200,7 +205,7 @@ body {
 
 /* TASKS */
 .task-card {
-  background: #111;
+  background: rgba(17,17,17,0.9);
   padding: 15px;
   border-radius: 16px;
   margin-bottom: 15px;
@@ -247,7 +252,7 @@ body {
 
 /* LEADERBOARD */
 .leaderboard-card {
-  background: #111;
+  background: rgba(17,17,17,0.9);
   border-radius: 18px;
   padding: 20px;
 }
