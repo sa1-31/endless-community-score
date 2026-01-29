@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0f;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.header {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.header p {
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 20px;
+  max-width: 480px;
+  margin: auto;
+}
+
+/* PROFILE */
+.profile-card {
+  background: #111;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #222;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* CONNECT BUTTONS */
+.connect-buttons button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background: #1f2933;
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.connect-buttons button:hover {
+  background: #374151;
+}
+
+/* TASKS */
+.task-card {
+  background: #111;
+  padding: 15px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.task-card input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  background: #1f2933;
+  color: white;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  background: linear-gradient(135deg, #a855f7, #22c55e);
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+.submit-btn:disabled {
+  background: #333;
+  color: #777;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin: 40px 0 20px;
+}
