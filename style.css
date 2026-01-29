@@ -116,6 +116,20 @@ body {
   border: none;
   background: #1f2933;
   color: white;
+  display: inline-block; /* block deyil, inline-block olsun */
+  width: 140px; /* genişlik ver */
+}
+
+.nick-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.hidden {
   display: none;
 }
 
