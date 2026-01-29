@@ -18,12 +18,14 @@ body {
   z-index: -2;
 }
 
+/* overlay */
 .overlay {
   backdrop-filter: blur(8px);
   position: relative;
   z-index: 1;
   min-height: 100vh;
   padding: 20px;
+  background: rgba(255, 255, 255, 0.05); /* əvvəl 0.9 idi, indi 0.05 oldu */
 }
 
 /* HEADER */
