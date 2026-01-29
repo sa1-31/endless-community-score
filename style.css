@@ -115,30 +115,29 @@ body {
   object-fit: contain;
 }
 
-/* NICK */
+/* NICKNAME */
 .nick-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 10px;
-  position: relative;
 }
 
 #displayName {
   font-size: 20px;
   font-weight: bold;
-  display: block;
+  text-align: center;
 }
 
 #userNameInput {
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 8px;
   border: none;
   background: #1f2933;
   color: white;
-  display: inline-block;
-  width: 140px;
+  width: 160px;
+  text-align: center;
 }
 
 .nick-btn {
